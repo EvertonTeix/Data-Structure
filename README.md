@@ -1,1 +1,1 @@
-# Studying-Estrutura-de-Dados
+# Estudando Estrutura de Dados na linguagem C.
