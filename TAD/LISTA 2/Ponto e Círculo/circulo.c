@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "circulo.h"
-#include "ponto.h"
 #include <math.h>
 
 struct circulo {
@@ -50,4 +49,19 @@ void alteraPonto(Circulo *c, float x, float y){
 
 void mostraCoordenadaCirculo(Circulo *c){
     mostraCoordenadas(c->ponto);
+}
+
+void acessaCirculo(Circulo *c, Ponto *p, float *r){
+
+    float x, y;
+    acessa(c->ponto, &x, &y);
+    *r = c->raio;
+    atribui(p, x, y);
+}
+
+void mostraElementosCirculo(Circulo *c) {
+
+    float x, y;
+    acessa(c->ponto, &x, &y);
+    printf("\nCentro: (%.2f, %.2f) Raio: %.2f\n", x, y, c->raio);
 }

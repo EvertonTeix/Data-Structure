@@ -37,8 +37,8 @@ int main(){
     /*Alterar ponto do círculo: 2c*/
     alteraPonto(meuCirculo, 1.0, 1.0);
 
-    /*Mostrando o ponto do círculo alterado:*/
-    mostraCoordenadaCirculo(meuCirculo);
+    /*testando alternativa D e E da Q2 lista 2:*/
+    mostraElementosCirculo(meuCirculo);
 
     // Liberando memória
     circ_libera(meuCirculo);

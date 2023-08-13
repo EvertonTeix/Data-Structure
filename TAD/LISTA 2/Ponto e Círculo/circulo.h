@@ -31,3 +31,9 @@ void alteraPonto(Circulo *c, float x, float y);
 
 /*Mostrar coordenada do centro do circulo*/
 void mostraCoordenadaCirculo(Circulo *c);
+
+/*Acessa os elementos (ponto e raio) de um círculo*/
+void acessaCirculo(Circulo *c, Ponto *p, float *r);
+
+/*Mostra elementos (ponto e raio) de um círculo*/
+void mostraElementosCirculo(Circulo *c);
