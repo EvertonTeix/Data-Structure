@@ -43,3 +43,11 @@ int circ_interior(Circulo *c, Ponto *p){
 float circunferencia(Circulo *c){
     return 2 * c->raio * PI;
 }
+
+void alteraPonto(Circulo *c, float x, float y){
+    atribui(c->ponto, x, y); //usando função do TAD ponto.
+}
+
+void mostraCoordenadaCirculo(Circulo *c){
+    mostraCoordenadas(c->ponto);
+}

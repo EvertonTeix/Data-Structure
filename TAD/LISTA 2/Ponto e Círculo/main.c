@@ -34,6 +34,12 @@ int main(){
     /*Testando a alternativa 'a' da questão 2*/
     printf("\nA circunferencia do circulo e: %.2f", circunferencia(meuCirculo));
 
+    /*Alterar ponto do círculo: 2c*/
+    alteraPonto(meuCirculo, 1.0, 1.0);
+
+    /*Mostrando o ponto do círculo alterado:*/
+    mostraCoordenadaCirculo(meuCirculo);
+
     // Liberando memória
     circ_libera(meuCirculo);
     libera(ponto);

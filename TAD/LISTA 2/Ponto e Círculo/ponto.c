@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include "circulo.h"
 #include "ponto.h"
 
 struct ponto{
