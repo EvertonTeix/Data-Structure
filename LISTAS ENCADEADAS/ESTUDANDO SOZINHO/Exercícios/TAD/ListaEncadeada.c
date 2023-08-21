@@ -50,7 +50,7 @@ Lista* busca(Lista * l, int i){
 
 Lista* remova(Lista * l, int v){
     Lista* ant = NULL;
-    Lista* p;
+    Lista* p = l;
 
     //procura o elemento na lista, guardando o anterior
     while(p != NULL && p->info != v){
