@@ -4,9 +4,10 @@
 
 int main(){
 
-    Lista *retiraEl;
     Lista *lista1 = criaLista();
-    /*Lista *lista2 = criaLista();
+    Lista *lista2 = criaLista();
+
+    /*
     Lista *buscar;
     Lista *ultimoNo;
     Lista *concatenada;
@@ -28,10 +29,22 @@ int main(){
     lista1 = insere(lista1, 2);
     lista1 = insere(lista1, 2);
     lista1 = insereFinal(lista1, 5);
+
+    lista2 = insere(lista2, 1);
+    lista2 = insere(lista2, 2);
+
     imprime(lista1);
 
-    retiraEl = retiraElemento(lista1, 2);
-    imprime(retiraEl);
+    printf("\n\n");
+
+    lista1 = retiraElemento(lista1, 2);
+    imprime(lista1);
+
+    if(iguais(lista1,lista2) == 0){
+        printf("\nAs listas sao iguais!");
+    }else{
+        printf("\nAs listas sao diferentes.");
+    }
 
     /*if(vazia(lista) == 0){
         printf("\nLista nao vazia\n");
@@ -80,7 +93,10 @@ int main(){
     printf("\n\n");
     imprime(concatenada);
 
-    libera(lista1);
     */
+    
+    libera(lista1);
+    libera(lista2);
+    
     return 0;
 }

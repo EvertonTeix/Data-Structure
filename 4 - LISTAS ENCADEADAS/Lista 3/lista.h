@@ -41,3 +41,5 @@ Lista* concatena(Lista *l1, Lista *l2);
 da lista todas as ocorrências de n e retorne a lista resultante.*/
 Lista* retiraElemento(Lista *l, int n);
 
+/*Testa se duas listas passadas como parâmetros são iguais.*/
+int iguais(Lista *l1, Lista *l2);

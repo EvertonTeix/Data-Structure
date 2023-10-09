@@ -144,14 +144,64 @@ Lista* concatena(Lista *l1, Lista *l2){
 }
 
 Lista* retiraElemento(Lista *l, int n){
-
+    
+    Lista *ant = NULL;
     Lista *p = l;
 
-    for(p; p->proximo != NULL; p = p->proximo){
-        if(p->info == n){
-            p = remova(l,n);
-        }
-    }
+    while(p != NULL){
 
+        if(p->info == n){
+            if(ant == NULL){
+                l = p->proximo;
+            }else{
+                ant->proximo = p->proximo;
+            }
+        }else{
+            ant = p;
+        }
+
+        p = p->proximo;
+
+    }
+    
     return l;
+}
+
+int tamanhoLista(Lista *l){
+    Lista *p;
+    int contador = 0;
+
+    for(p = l; p != NULL; p = p->proximo){
+        contador++;
+    }
+    
+    return contador;
+}
+
+int iguais(Lista *l1, Lista *l2){
+    Lista *p1 = l1, *p2 = l2;
+    int contador = 0;
+
+    
+    if(tamanhoLista(l1) == tamanhoLista(l2)){
+
+        while(p1 != NULL && p2 != NULL){
+            if(p1->info == p2->info){
+                contador++;
+            }else{
+                return 1;
+            }
+
+            p2 = p2->proximo;
+            p1 = p1->proximo;
+        }
+
+        if(contador == tamanhoLista(l1)){
+            return 0;
+        }else{
+            return 1;
+        }
+    }else{
+        return 1;
+    }
 }
