@@ -45,3 +45,9 @@ float pop(Pilha *p){
 void pilhaLibera(Pilha *p){
     free(p);
 }
+
+void pilhaImprime(Pilha *p){
+    for (int i = (p->qtdeItens - 1); i >= 0; i--){
+    printf("%.1f\n",p->vet[i]);
+    }
+}

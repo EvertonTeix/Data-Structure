@@ -16,3 +16,6 @@ float pop(Pilha *p);                    //pop == remover do topo
 
 /*Libera a pilha*/
 void pilhaLibera(Pilha *p);
+
+/*Imprime os elementos com vetor*/
+void pilhaImprime(Pilha *p);
