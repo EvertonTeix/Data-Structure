@@ -6,4 +6,4 @@
 <br> -> Tipos Abstratos de Dados (TAD);
 <br> -> Listas Encadeadas;
 <br> -> Pilhas;
-
+<br> -> Filas;
