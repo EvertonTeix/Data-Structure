@@ -7,7 +7,7 @@ typedef struct arv Arv;
 Arv* criaVazia();
 
 //Cria uma arvore nao vazia
-Arv* cria(char c, Arv *sae, Arv *sad);
+Arv* cria(int c, Arv *sae, Arv *sad);
 
 /*Retorna se a árvore está vazia ou não*/
 int arvoreVazia(Arv *a);
@@ -25,7 +25,7 @@ void imprimeSim(Arv *a);
 void imprimePos(Arv *a);
 
 //Retorna se a informação pertence ou não à árvore
-int pertence(Arv *a, char c);
+int pertence(Arv *a, int c);
 
 /*Retorna a quantidade de nos de uma arvore binaria*/
 int nos(Arv *a);
@@ -34,4 +34,13 @@ int nos(Arv *a);
 int folhas(Arv *a);
 
 /*Retorna a quantidade de nós que possuem apenas um filho*/
-int um_filho(Arv *a);;
+int um_filho(Arv *a);
+
+/*Insere um elemento na arvore binaria*/
+Arv* insere(Arv *a, int n);
+
+/*Consulta se o no esta na arvore*/
+int consultarNo(Arv *a, int n);
+
+/*Remove um no da arvore*/
+Arv* retira(Arv* a, int v);
