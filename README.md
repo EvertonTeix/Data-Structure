@@ -12,4 +12,5 @@
 
 <br>
 <br>
--> Trabalho 1;
+-> Trabalho 1 - Aborda conceitos de TAD;
+<br>-> Trabalho 2 - Aborda conceitos de Filas, Pilhas e Lista Encadeada;
