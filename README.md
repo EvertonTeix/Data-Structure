@@ -8,6 +8,7 @@
 <br> -> Pilhas;
 <br> -> Filas;
 <br> -> Árvores Binárias;
+<br> -> Ordenação;
 
 
 <br>
